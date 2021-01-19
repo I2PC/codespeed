@@ -1,5 +1,10 @@
 {% extends "codespeed/base.html" %}
+{% load static %}
 
 {% block title %}
-	My Own Title
+	Scipion benchmark server
 {% endblock %}
+{% block logo %}
+    <img src="{% static 'images/my-logo.png' %}" height="48" alt="logo"/>
+{% endblock logo %}
+{% block page_title %}{% endblock page_title %}

@@ -11,7 +11,7 @@ TOPDIR = os.path.split(BASEDIR)[1]
 REPOSITORY_BASE_PATH = os.path.join(BASEDIR, "repos")
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    # ('Your Name', 'pconesa@cnb.csic.es'),
 )
 
 MANAGERS = ADMINS
@@ -79,10 +79,14 @@ INSTALLED_APPS = (
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASEDIR, "sitestatic")
-STATICFILES_DIRS = (
-    os.path.join(BASEDIR, 'static'),
-)
+STATICFILES_DIRS = (os.path.join(BASEDIR, 'static'),)
 
+print ("ok")
 
-# Codespeed settings that can be overwritten here.
 from codespeed.settings import *
+
+
+CHART_ORIENTATION = "horizontal"
+DEF_BASELINE = {
+    'executable': 'Scipion',
+    'revision': 'production-conda'}
